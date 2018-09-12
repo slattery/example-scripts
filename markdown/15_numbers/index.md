@@ -51,9 +51,9 @@ operation.
 |                                   |                                                    |                                                  |                                            |                                              |
 
 
-### **CREATING** [NUMBER](#_top) [VARIABLES](EE13%20%20%20%20%20%20%20%20%20Variables.docx)
+### **CREATING** NUMBER VARIABLES
 
-<a name="number">#</a> *ee*.**number**() [<>](https://developers.google.com/earth-engine/api_docs#eenumber "Google API docs")
+<a name="number" href="#number">#</a> *ee*.**Number**() [<>](https://developers.google.com/earth-engine/api_docs#eenumber "Google API docs")
 
 ee.Number creates a new number from a specified sequence of numeral
 characters.
@@ -80,57 +80,57 @@ print( TheNUMBER );
 Each of these operations replicates a specified number (of any numerical
 type) to create a new one whose pixel type is as indicated below.
 
-<a name="uint32">#</a> *number*.**uint32**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberuint32 "Google API docs")  \
-<a name="touint32">#</a> *number*.**toUint32**()
+<a name="uint32" href="#uint32">#</a> *Number*.**uint32**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberuint32 "Google API docs")  \
+<a name="touint32" href="#touint32>#</a> *Number*.**toUint32**()
 
 Outputs an unsigned 32-bit integer
 
-<a name="uint16">#</a> *number*.**uint16**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberuint16 "Google API docs")  \
-<a name="touint16">#</a> *number*.**toUint16**()
+<a name="uint16" href="#uint16>#</a> *Number*.**uint16**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberuint16 "Google API docs")  \
+<a name="touint16 href="#touint16">#</a> *Number*.**toUint16**()
 
 Outputs an unsigned 16-bit integer
 
-[**\#**](#number) *number*.**uint8**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberuint8 "Google API docs")  \
-[**\#**](#number) *number*.**toUint8**()  \
-[**\#**](#number) *number*.**byte**()  \
-[**\#**](#number) *number*.**toByte**()
+[**\#**](#number) *Number*.**uint8**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberuint8 "Google API docs")  \
+[**\#**](#number) *Number*.**toUint8**()  \
+[**\#**](#number) *Number*.**byte**()  \
+[**\#**](#number) *Number*.**toByte**()
 
 Outputs an unsigned 8-bit integer
 
 
-[**\#**](#number) *number*.**int8**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberint8 "Google API docs")  \
-[**\#**](#number) *number*.**toInt8**()  
+[**\#**](#number) *Number*.**int8**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberint8 "Google API docs")  \
+[**\#**](#number) *Number*.**toInt8**()  
 
 Outputs an signed 8-bit integer
 
-[**\#**](#number) *number*.**int16**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberint16 "Google API docs")  \
-[**\#**](#number) *number*.**toInt16**()  \
-[**\#**](#number) *number*.**short**()  \
-[**\#**](#number) *number*.**toShort**()  \
+[**\#**](#number) *Number*.**int16**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberint16 "Google API docs")  \
+[**\#**](#number) *Number*.**toInt16**()  \
+[**\#**](#number) *Number*.**short**()  \
+[**\#**](#number) *Number*.**toShort**()  \
 
 Outputs an signed 16-bit integer
 
-[**\#**](#number) *number*.**int32**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberint32 "Google API docs")  \
-[**\#**](#number) *number*.**toInt32**()  \
-[**\#**](#number) *number*.**int**()  \
-[**\#**](#number) *number*.**toInt**()
+[**\#**](#number) *Number*.**int32**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberint32 "Google API docs")  \
+[**\#**](#number) *Number*.**toInt32**()  \
+[**\#**](#number) *Number*.**int**()  \
+[**\#**](#number) *Number*.**toInt**()
 
 Outputs a signed 32-bit integer
 
-[**\#**](#number) *number*.**int64**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberint64 "Google API docs")  \
-[**\#**](#number) *number*.**toInt64**()  \
-[**\#**](#number) *number*.**long**()  \
-[**\#**](#number) *number*.**toLong**()
+[**\#**](#number) *Number*.**int64**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberint64 "Google API docs")  \
+[**\#**](#number) *Number*.**toInt64**()  \
+[**\#**](#number) *Number*.**long**()  \
+[**\#**](#number) *Number*.**toLong**()
 
 Outputs a signed 64-bit integer
 
-[**\#**](#number) *number*.**float**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberfloat "Google API docs")  \
-[**\#**](#number) *number*.**toFloat**()  
+[**\#**](#number) *Number*.**float**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberfloat "Google API docs")  \
+[**\#**](#number) *Number*.**toFloat**()  
 
 Outputs a 32-bit floating-point number
 
-[**\#**](#number) *number*.**double**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberdouble "Google API docs")  \
-[**\#**](#number) *number*.**toDouble**()  
+[**\#**](#number) *Number*.**double**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberdouble "Google API docs")  \
+[**\#**](#number) *Number*.**toDouble**()  
 
 Outputs a 64-bit floating-point number
 
