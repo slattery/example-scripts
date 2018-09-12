@@ -21,11 +21,11 @@ operation.
 | **EDITING** NUMBERS               |                                                    |                                                  |                                            |                                              |
 |  - BY **RECASTING** DATA TYPES       | [number.uint16](#uint16)                           | [number.Uint16](#uint16)                         | [number.uint32](#uint32)                   | [number.Uint32](#uint32)                     |
 |                                   | [number.uint8 ](#uint8_)                           | [number.Uint8](#uint8_)                          |                                            |                                              |
-|                                   | [number.int8](#uint8_)                             | [number.toInt8](#uint8_)                         | [number.byte ](#uint8_)                    | [number.toByte](#uint8_)                     |
-|                                   | [number.int16 ](#uint8_)                           | [number.toInt16](#uint8_)                        | [number.short ](#uint8_)                   | [number.toShort](#uint8_)                    |
-|                                   | [number.int32 ](#uint8_)                           | [number.toInt32](#uint8_)                        | [number.int](#uint8_)                      | [number.toInt](#uint8_)                      |
-|                                   | [number.int64 ](#uint8_)                           | [number.toInt64](#uint8_)                        | [number.long ](#uint8_)                    | [number.toLong](#uint8_)                     |
-|                                   | [number.float ](#uint8_)                           | [number.toFloat](#uint8_)                        | [number.double](#uint8_)                   | [number.toDouble](#uint8_)                   |
+|                                   | [number.int8](#int8)                             | [number.toInt8](#int8)                         | [number.byte ](#int8)                    | [number.toByte](#int8)                     |
+|                                   | [number.int16 ](#int16)                           | [number.toInt16](#int16)                        | [number.short ](#int16)                   | [number.toShort](#int16)                    |
+|                                   | [number.int32 ](#int32)                           | [number.toInt32](#int32)                        | [number.int](#int32)                      | [number.toInt](#int32)                      |
+|                                   | [number.int64 ](#int64)                           | [number.toInt64](#int64)                        | [number.long ](#int64)                    | [number.toLong](#int64)                     |
+|                                   | [number.float ](#float)                           | [number.toFloat](#float)                        | [number.double](#float)                   | [number.toDouble](#float)                   |
 | **TRANSFORMING** NUMBERS          |                                                    |                                                  |                                            |                                              |
 |  - WITH **LOGICAL** OPERATIONS       | [number.eq](#eq_neq_)                              | [number.gt](#eq_neq_)                            | [number.lt](#eq_neq_)                      | [number.and](#and_or)                        |
 |                                   | [number.neq](#eq_neq_)                             | [number.gte](#eq_neq_)                           | [number.lte](#eq_neq_)                     | [number.or](#and_or)                         |
@@ -85,8 +85,8 @@ type) to create a new one whose pixel type is as indicated below.
 
 Outputs an unsigned 32-bit integer
 
-<a name="uint16" href="#uint16>#</a> *Number*.**uint16**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberuint16 "Google API docs")  \
-<a name="touint16 href="#touint16">#</a> *Number*.**toUint16**()
+<a name="uint16" href="#uint16">#</a> *Number*.**uint16**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberuint16 "Google API docs")  \
+<a name="touint16" href="#touint16">#</a> *Number*.**toUint16**()
 
 Outputs an unsigned 16-bit integer
 
