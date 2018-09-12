@@ -81,7 +81,7 @@ Each of these operations replicates a specified number (of any numerical
 type) to create a new one whose pixel type is as indicated below.
 
 <a name="uint32" href="#uint32">#</a> *Number*.**uint32**() [<>](https://developers.google.com/earth-engine/api_docs#eenumberuint32 "Google API docs")  \
-<a name="touint32" href="#touint32>#</a> *Number*.**toUint32**()
+<a name="touint32" href="#touint32">#</a> *Number*.**toUint32**()
 
 Outputs an unsigned 32-bit integer
 
