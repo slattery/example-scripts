@@ -1,20 +1,25 @@
-# [GOOGLE EARTH ENGINE](EE01%20Earth%20Engine%20\(EE\).docx) 
-## [APPLICATION PROGRAMMING INTERFACE](EE05%20%20%20The%20EE%20API.docx) [CAPABILITIES](EE07%20%20%20%20%20%20API%20Capabilities.docx)
+# Google Earth Engine Example Series
+
+This document is part of the [Google Earth Engine Example Series](../01_earth_engine/), 
+an introduction to the [objects](../13_variables/) and [capabilities](../07_capabilities/) of Earth Engine's [API](../05_the_ee_api/).
+The series was originally crafted by Dana Tomlin for the *Geospatial Software Design* course at the Yale School of Forestry and Environmental Studies.
 
 
-### PROCESSING **NUMBER** [VARIABLES](EE13%20%20%20%20%20%20%20%20%20Variables.docx)
 
-A number is an EE variable object that represents a quantity. Numbers
+## PROCESSING **NUMBER** VARIABLES
+
+A number is an EE [variable object](../13_variables/) that represents a quantity. Numbers
 can be processed by using operations of the types listed below, which
 vary according to the nature of that processing. Each operation name is
 linked to a separate page describing that
 operation.
 
-| **CREATING** NUMBERS              |                                                    |                                                  |                                            |                                              |
+|  Utility                                 |        API Calls                                            |                                                  |                                            |                                              |
 | --------------------------------- | -------------------------------------------------- | ------------------------------------------------ | ------------------------------------------ | -------------------------------------------- |
+| **CREATING** NUMBERS              |                                                    |                                                  |                                            |                                              |
 |                                   | [ee.Number](#Number)                               |                                                  |                                            |                                              |
 | **EDITING** NUMBERS               |                                                    |                                                  |                                            |                                              |
-| BY **RECASTING** DATA TYPES       | [number.uint16](#uint8_)                           | [number.Uint16](#uint8_)                         | [number.uint32](#uint8_)                   | [number.Uint32](#uint8_)                     |
+|  - BY **RECASTING** DATA TYPES       | [number.uint16](#uint8_)                           | [number.Uint16](#uint8_)                         | [number.uint32](#uint8_)                   | [number.Uint32](#uint8_)                     |
 |                                   | [number.uint8 ](#uint8_)                           | [number.Uint8](#uint8_)                          |                                            |                                              |
 |                                   | [number.int8](#uint8_)                             | [number.toInt8](#uint8_)                         | [number.byte ](#uint8_)                    | [number.toByte](#uint8_)                     |
 |                                   | [number.int16 ](#uint8_)                           | [number.toInt16](#uint8_)                        | [number.short ](#uint8_)                   | [number.toShort](#uint8_)                    |
@@ -22,26 +27,28 @@ operation.
 |                                   | [number.int64 ](#uint8_)                           | [number.toInt64](#uint8_)                        | [number.long ](#uint8_)                    | [number.toLong](#uint8_)                     |
 |                                   | [number.float ](#uint8_)                           | [number.toFloat](#uint8_)                        | [number.double](#uint8_)                   | [number.toDouble](#uint8_)                   |
 | **TRANSFORMING** NUMBERS          |                                                    |                                                  |                                            |                                              |
-| WITH **LOGICAL** OPERATIONS       | [number.eq](#eq_neq_)                              | [number.gt](#eq_neq_)                            | [number.lt](#eq_neq_)                      | [number.and](#and_or)                        |
+|  - WITH **LOGICAL** OPERATIONS       | [number.eq](#eq_neq_)                              | [number.gt](#eq_neq_)                            | [number.lt](#eq_neq_)                      | [number.and](#and_or)                        |
 |                                   | [number.neq](#eq_neq_)                             | [number.gte](#eq_neq_)                           | [number.lte](#eq_neq_)                     | [number.or](#and_or)                         |
 |                                   | [number.not](#not)                                 |                                                  |                                            |                                              |
-| WITH **MATHEMATICAL** OPERATIONS  | [number.abs](#abs_round_)                          | [number.ceil](#abs_round_)                       | [number.floor](#abs_round_)                | [number.log](#abs_round_)                    |
+|  - WITH **MATHEMATICAL** OPERATIONS  | [number.abs](#abs_round_)                          | [number.ceil](#abs_round_)                       | [number.floor](#abs_round_)                | [number.log](#abs_round_)                    |
 |                                   | [number.round](#abs_round_)                        | [number.sqrt](#abs_round_)                       | [number.exp](#abs_round_)                  | [number.log10](#abs_round_)                  |
 |                                   | [number.add](#add_subtract_)                       | [number.subtract](#add_subtract_)                | [number.multiply](#add_subtract_)          | [number.divide](#add_subtract_)              |
 |                                   | [number.max](#add_subtract_)                       | [number.min](#add_subtract_)                     | [number.mod ](#add_subtract_)              | [number.pow](#add_subtract_)                 |
 |                                   | [number.hypot](#add_subtract_)                     | [number.first](#add_subtract_)                   | [number.first\_nonzero](#add_subtract_)    |                                              |
-| WITH **TRIGONOMETRIC** OPERATIONS | [number.sin](#sin_cos_)                            | [number.cos](#sin_cos_)                          | [number.tan](#sin_cos_)                    |                                              |
+|  - WITH **TRIGONOMETRIC** OPERATIONS | [number.sin](#sin_cos_)                            | [number.cos](#sin_cos_)                          | [number.tan](#sin_cos_)                    |                                              |
 |                                   | [number.sinh](#sin_cos_)                           | [number.cosh](#sin_cos_)                         | [number.tanh ](#sin_cos_)                  |                                              |
 |                                   | [number.acos](#sin_cos_)                           | [number.asin](#sin_cos_)                         | [number.atan](#sin_cos_)                   | [number.atan2](#atan2)                       |
-| WITH **BITWISE** OPERATIONS       | [number.bitwiseAnd](#bitwiseAnd_Or_)               | [number.bitwiseOr](#bitwiseAnd_Or_)              | [number.bitwise\_xor](#bitwiseAnd_Or_)     | [number.bitwiseNot](#bitwiseAnd_Or_)         |
+|  - WITH **BITWISE** OPERATIONS       | [number.bitwiseAnd](#bitwiseAnd_Or_)               | [number.bitwiseOr](#bitwiseAnd_Or_)              | [number.bitwise\_xor](#bitwiseAnd_Or_)     | [number.bitwiseNot](#bitwiseAnd_Or_)         |
 |                                   | [number.bitwise\_and](#bitwiseAnd_Or_)             | [number.bitwise\_or](#bitwiseAnd_Or_)            | [number.bitwiseXor](#bitwiseAnd_Or_)       | [number.bitwise\_not](#bitwiseAnd_Or_)       |
 |                                   | [number.leftShift](#leftShift_rightShift)          | [number.left\_shift](#leftShift_rightShift)      | [number.rightShift](#leftShift_rightShift) | [number.right\_shift](#leftShift_rightShift) |
 |                                   |                                                    |                                                  |                                            |                                              |
 | **COMPARING** NUMBERS             | [ee.Algorithms.IsEqual](#IsEqual)                  |                                                  |                                            |                                              |
+|                                   |                                                    |                                                  |                                            |                                              |
 | **DOCUMENTING** NUMBERS           | [ee.Algorithms.Describe](#Describe_String_getInfo) | [ee.Algorithms.String](#Describe_String_getInfo) |                                            |                                              |
 |                                   | [number.GetInfo](#Describe_String_getInfo)         | [number.toString](#toString_serialize)           | [number.serialize](#toString_serialize)    |                                              |
 | **PRESENTING** NUMBERS            |                                                    |                                                  |                                            |                                              |
-| IN **PRINT**                      | [print(number)](#touint32)                    | [console.log(number)](#print_console)            | [alert(number) ](#alert_confirm)           | [confirm(number)](#alert_confirm)            |
+|  - IN **PRINT**                      | [print(number)](#touint32)                    | [console.log(number)](#print_console)            | [alert(number) ](#alert_confirm)           | [confirm(number)](#alert_confirm)            |
+|                                   |                                                    |                                                  |                                            |                                              |
 
 
 ### **CREATING** [NUMBER](#_top) [VARIABLES](EE13%20%20%20%20%20%20%20%20%20Variables.docx)
