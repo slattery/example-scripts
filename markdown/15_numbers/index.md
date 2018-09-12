@@ -17,9 +17,9 @@ operation.
 |  Utility                                 |        API Calls                                            |                                                  |                                            |                                              |
 | --------------------------------- | -------------------------------------------------- | ------------------------------------------------ | ------------------------------------------ | -------------------------------------------- |
 | **CREATING** NUMBERS              |                                                    |                                                  |                                            |                                              |
-|                                   | [ee.Number](#Number)                               |                                                  |                                            |                                              |
+|                                   | [ee.Number](#number)                               |                                                  |                                            |                                              |
 | **EDITING** NUMBERS               |                                                    |                                                  |                                            |                                              |
-|  - BY **RECASTING** DATA TYPES       | [number.uint16](#uint8_)                           | [number.Uint16](#uint8_)                         | [number.uint32](#uint8_)                   | [number.Uint32](#uint8_)                     |
+|  - BY **RECASTING** DATA TYPES       | [number.uint16](#uint16)                           | [number.Uint16](#uint16)                         | [number.uint32](#uint32)                   | [number.Uint32](#uint32)                     |
 |                                   | [number.uint8 ](#uint8_)                           | [number.Uint8](#uint8_)                          |                                            |                                              |
 |                                   | [number.int8](#uint8_)                             | [number.toInt8](#uint8_)                         | [number.byte ](#uint8_)                    | [number.toByte](#uint8_)                     |
 |                                   | [number.int16 ](#uint8_)                           | [number.toInt16](#uint8_)                        | [number.short ](#uint8_)                   | [number.toShort](#uint8_)                    |
@@ -53,7 +53,7 @@ operation.
 
 ### **CREATING** [NUMBER](#_top) [VARIABLES](EE13%20%20%20%20%20%20%20%20%20Variables.docx)
 
-[**\#**](#number) *ee*.**number**() [<>](https://developers.google.com/earth-engine/api_docs#eenumber "Google API docs")
+<a name="number">#</a> *ee*.**number**() [<>](https://developers.google.com/earth-engine/api_docs#eenumber "Google API docs")
 
 ee.Number creates a new number from a specified sequence of numeral
 characters.
